@@ -26,3 +26,9 @@
     line: 'short_open_tag=On'
   notify: restart apache
 
+#- name: Config php.ini file
+#  lineinfile:
+    path: /etc/php.ini
+    regexp: ^short_open_tag
+    line: 'short_open_tag=On'
+  notify: restart apache

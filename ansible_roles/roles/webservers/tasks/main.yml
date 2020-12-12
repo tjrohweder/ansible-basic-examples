@@ -1,6 +1,6 @@
 ---
 # tasks file for roles/webservers
-- name: Upload application file
+- name: Upload application file :)
   copy:
     src: ../files/index.php
     dest: "{{ path_to_app }}"

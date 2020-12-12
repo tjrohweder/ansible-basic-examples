@@ -9,7 +9,7 @@
 - name: Create simple info page
   copy:
     dest: "{{ path_to_app }}/info.php"
-    content: "<h1> Info about out webserver {{ ansible_hostname }} </h1>"
+    content: "<h1> Info about webserver {{ ansible_hostname }} </h1>"
 
 - name: See directory content
   command: ls -la {{ path_to_app }}
